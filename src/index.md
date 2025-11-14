@@ -1,5 +1,5 @@
 ---
-layouts: layouts/base.html
+layouts: base.html
 title: TEST TITLE
 ---
 
