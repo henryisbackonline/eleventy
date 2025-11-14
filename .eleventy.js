@@ -3,7 +3,6 @@ module.exports = function(eleventyConfig) {
         dir: {
             input: 'src',
             includes: '_includes',
-            layouts: '_includes/layouts',
             output: '_site',
         },
         templateFormats: ['md', 'njk', 'html'],
