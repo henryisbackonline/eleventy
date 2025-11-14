@@ -1,6 +1,6 @@
 ---
 layouts: base.html
-title: Another markdown test
+title: 'Another markdown test'
 ---
 
 # Heading 1
