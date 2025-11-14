@@ -1,13 +1,13 @@
 ---
 layouts: base.html
-title: TEST TITLE
+title: Another markdown test
 ---
 
-# Here is heading 1
-this is a test markdown file to see how eleventy deals with these
-what about some *italics* or some **bold**.
+# Heading 1
+This time, we've changed the directory for the layouts in `.eleventy.js`
 
-maybe even some `code?`
+What have we learned so far?
 
-## second heading
-huh, well. okay then.
+1. all starting files much go in `_src`. I Guess this can be changed too, but I'll have to look at it.
+2. eleventy works with markdown beautifully.
+3. I think i have to update some of the exmplate languages in the *config* file. I'll do that later.
