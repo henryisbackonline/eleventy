@@ -1,4 +1,4 @@
-module.exports = function(eleventyConfig) {
+export default async function(eleventyConfig) {
     //Pass images through to _site
     eleventyConfig.addPassthroughCopy("src/img")
 
