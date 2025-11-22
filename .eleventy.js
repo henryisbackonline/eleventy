@@ -5,6 +5,10 @@ export default async function(eleventyConfig) {
     //Copy theme folder to _site/theme
     eleventyConfig.addPassthroughCopy("theme")
 
+    //Alias the layout themes to make my markdown frontmatter more readable
+    eleventyConfig.addLayoutAlias("base", "_layouts/base.liquid")
+    // eleventyConfig.addLayoutAlias("post", "_layouts/post.liquid") // don't have one of these yet, but I will soon
+
     return {
         dir: {
             input: "src",
@@ -13,8 +17,8 @@ export default async function(eleventyConfig) {
             output: "_site",
         },
         templateFormats: ["md", "njk", "html"],
-        markdownTemplateEngine: "njk",
-        htmlTemplateEngine: "njk",
-        dataTemplateEngine: "njk",
+        markdownTemplateEngine: ["njk", "liquid"],
+        htmlTemplateEngine: ["njk", "liquid"],
+        dataTemplateEngine: ["njk", "liquid"] //add liquid template - i may switch to this only later
     };
 }
