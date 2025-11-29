@@ -17,8 +17,8 @@ export default async function(eleventyConfig) {
             output: "_site",
         },
         templateFormats: ["md", "njk", "html"],
-        markdownTemplateEngine: ["njk", "liquid"],
-        htmlTemplateEngine: ["njk", "liquid"],
-        dataTemplateEngine: ["njk", "liquid"] //add liquid template - i may switch to this only later
+        markdownTemplateEngine: "liquid",
+        htmlTemplateEngine: "liquid",
+        dataTemplateEngine: "liquid"
     };
 }
